@@ -1,0 +1,25 @@
+@tailwind base;
+
+@tailwind components;
+
+.widget {
+  @apply w-1/4 mb-6 px-4;
+
+  .inner {
+    @apply block bg-white shadow
+  }
+
+  header {
+    @apply border-t-4 border-gray-600 pt-6 px-6
+  }
+
+  h2 {
+    @apply font-bold
+  }
+
+  .content {
+    @apply p-6
+  }
+}
+
+@tailwind utilities;
