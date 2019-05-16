@@ -13,9 +13,3 @@ mix.disableNotifications()
       path.join(__dirname, 'index.html'),
     ]),
  })
-  // .browserSync({
-  //   proxy: 'localhost:8001',
-  //   // files: ['dist/css/app.css', 'index.html__'],
-  //   open: false,
-  //   notify: false
-  // })
