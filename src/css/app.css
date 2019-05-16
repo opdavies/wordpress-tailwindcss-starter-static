@@ -1,5 +1,17 @@
 @tailwind base;
 
+a {
+  @apply text-blue-700 p-px -m-px;
+
+  &:hover {
+    @apply underline
+  }
+
+  &:focus {
+    @apply bg-blue-800 text-white outline-none
+  }
+}
+
 @tailwind components;
 
 .widget {
