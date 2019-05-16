@@ -15,14 +15,16 @@ a {
 @tailwind components;
 
 .nav-item {
-  @apply block w-full text-gray-700 uppercase font-semibold text-lg tracking-wide mx-3;
+  @apply inline-block text-gray-700 uppercase font-semibold text-lg tracking-wide mx-3 mb-2;
 
   &:focus {
     @apply bg-gray-700
   }
 
   @screen md {
-    @apply inline-block w-auto
+    @apply mb-0
+  }
+}
   }
 }
 
