@@ -25,6 +25,46 @@ a {
     @apply mb-0
   }
 }
+
+.markup {
+  @apply text-gray-800 leading-relaxed;
+
+  h1,
+  h2 {
+    @apply font-semibold mb-2 text-gray-700
+  }
+
+  h1 {
+    @apply text-3xl;
+
+    @screen md {
+      @apply text-4xl
+    }
+
+    &:after {
+      @apply block ml-0 w-12 border-t-4 border-gray-600 mt-4 mb-10;
+      content: ''
+    }
+  }
+
+  h2 {
+    @apply text-2xl mt-8;
+
+    @screen md {
+      @apply text-3xl
+    }
+  }
+
+  ul {
+    @apply list-disc list-inside
+  }
+
+  p,
+  ol,
+  ul {
+    &:not(:last-of-type) {
+      @apply mb-6
+    }
   }
 }
 
@@ -54,7 +94,7 @@ a {
   }
 
   h2 {
-    @apply font-bold
+    @apply font-semibold text-gray-900
   }
 
   .content {
