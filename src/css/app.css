@@ -16,6 +16,7 @@ a {
 
 .widget {
   @apply w-full mb-6 px-4;
+  @apply flex flex-col;
 
   @screen sm {
     @apply w-1/2
@@ -30,7 +31,8 @@ a {
   }
 
   .inner {
-    @apply block bg-white shadow
+    @apply block bg-white shadow;
+    @apply flex flex-col flex-1
   }
 
   header {
