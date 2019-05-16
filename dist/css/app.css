@@ -628,11 +628,32 @@ video {
 }
 
 .widget {
-  width: 25%;
+  width: 100%;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+@media (min-width: 640px) {
+
+.widget {
+    width: 50%
+}
+  }
+
+@media (min-width: 768px) {
+
+.widget {
+    width: 33.33333%
+}
+  }
+
+@media (min-width: 1024px) {
+
+.widget {
+    width: 25%
+}
+  }
 
 .widget .inner {
     display: block;

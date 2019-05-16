@@ -3,7 +3,19 @@
 @tailwind components;
 
 .widget {
-  @apply w-1/4 mb-6 px-4;
+  @apply w-full mb-6 px-4;
+
+  @screen sm {
+    @apply w-1/2
+  }
+
+  @screen md {
+    @apply w-1/3
+  }
+
+  @screen lg {
+    @apply w-1/4
+  }
 
   .inner {
     @apply block bg-white shadow
